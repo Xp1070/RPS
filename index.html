@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona</title>
+    <title>kamien, papier i nozyczki</title>
     <script src="script.js"></script>
+    <style>
+        h1{
+            font-family: "Comis Sans MS";
+            text-align: center;
+
+        }
+        body{
+            background-color: bisque;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 </head>
 <body>
-    <button type="button" onclick="randomize()">Narzędzia</button>
-
-    <p id="randomTool">Tu pojawi się narzędzie</p>
+    <h1>Rock paper scissors : The Game</h1>
+    <table>
+        <tr>
+            <td><button id="0" onclick="pick(this.id)"><img src="images/rock.png" height="200px" width="200px"></button></td>
+            <td><button id="1" onclick="pick(this.id)"><img src="images/paper.png" height="200px" width="200px"></button></td>
+            <td><button id="2" onclick="pick(this.id)"><img src="images/scissors.png" height="200px" width="200px"></button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="text-align:center;"><button style="font-size:xx-large;" onclick="enemyTurn()">Kontynuuj</button></td>
+            <td></td>
+        </tr>
+    </table>
 </body>
 </html>
