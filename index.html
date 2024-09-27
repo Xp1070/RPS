@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kamien, papier i nozyczki</title>
+    <title>Kamien, papier i nozyczki</title>
     <script src="script.js"></script>
     <style>
         h1{
-            font-family: "Comis Sans MS";
+            font-family: "Comic Sans MS";
             text-align: center;
-
+        }
+        h2{
+            font-family: "Comic Sans MS";
+            text-align: center;
         }
         body{
             background-color: bisque;
@@ -18,6 +21,13 @@
         table{
             margin-left: auto;
             margin-right: auto;
+        }
+        hr{
+            color: black;
+            height: 10px;
+            background-color: black;
+            border-style: solid;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -31,9 +41,17 @@
         </tr>
         <tr>
             <td></td>
-            <td style="text-align:center;"><button style="font-size:xx-large;" onclick="enemyTurn()">Kontynuuj</button></td>
+            <td style="width: 100px;"><h2 id="choosing"></h2></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="text-align:center;"><button style="font-size:xx-large;" onclick="enemyTurn()">Play</button></td>
             <td></td>
         </tr>
     </table>
+    <hr>
+    <h2 id="tekst"></h2>
+    <h2 id="score"></h2>
 </body>
 </html>
